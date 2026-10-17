@@ -6,6 +6,14 @@ Buddy is a pocket-sized, autonomous artificial-life companion for the **Waveshar
 
 You can spend time with him, but you are not responsible for keeping a chore meter full. Buddy is meant to have a life of his own. Sometimes the fun is interacting; sometimes it is simply noticing what he has decided to do today.
 
+## Want the practical version first?
+
+- [Owner Guide (Word)](docs/manuals/Buddy%20Owner%20Guide.docx) — for adults who want to understand Buddy and use him confidently.
+- [Family Owner Manual (Word)](docs/manuals/Buddy%20Family%20Owner%20Manual.docx) — a simpler, child-friendly introduction.
+- Prefer reading on GitHub? Here are the [owner guide](docs/manuals/owner-guide.md) and [family manual](docs/manuals/family-manual.md) as web pages.
+
+The manuals explain day-to-day use in plain language. This README takes a broader look at what Buddy is, how his simulated life develops, and what the firmware is designed to do.
+
 **Current release: `2026101701`.** Buddy is freeware, not open-source firmware. The firmware, Buddy-created artwork and sounds remain copyrighted; firmware source and raw creative assets are not part of the public package. Installer utilities are separately MIT licensed. Third-party components retain their own terms. The release includes exact matching application objects and a tested source-private LGPL relinking procedure. See [license scope](LICENSE-SCOPE.md) and [third-party notices](THIRD_PARTY.md).
 
 ## What makes Buddy different?
@@ -34,6 +42,20 @@ On a brand-new installation, a short WELCOME sequence lets the owner choose a bo
 Over time, needs and experiences interact with temperament. Something enjoyable can become a favorite. Repetition can become a routine. An object can become familiar, a project can matter, and an inherited piece of the world can invite a new generation to take an interest. A sensitive Buddy and an independent Buddy need not respond to the same situation in the same way.
 
 This is a designed, rule-based artificial-life simulation with persistent state. It is **not a conversational language model**, a claim of consciousness, or a creature that understands unrestricted speech. Its individuality comes from the interaction of many small systems over time rather than a remote AI writing its dialogue.
+
+### How an individual life takes shape
+
+Buddy's personality is not a label that dictates every action. His temperament, current needs, age, temperature, learned preferences, memories, possessions and the state of his world all help shape what he is inclined to do. Those influences can reinforce or soften one another: an experience that suits one Buddy may be passed over by another.
+
+The firmware repeatedly makes small choices about what matters next. A visible scene is only the moment you happen to catch; underneath it, activities can contribute to preferences, routines, projects and the changing world. Repetition can make an interest feel familiar, while a new experience can lead him somewhere else. The intention is for behavior to have context and consequences, not just to swap randomly between animations.
+
+Your interaction is an invitation, not a care requirement. You can meet him in the moment, and the first-start choices give him a starting point, but there is no daily checklist you must complete to keep him alive or progressing. Left alone, he continues to act and develop.
+
+### A glimpse of an ordinary day
+
+There is no fixed daily script, but imagine a curious Buddy noticing his grove, pausing to enjoy the flowers, then spending some of his attention on a longer project at home. Another Buddy might prefer a quieter activity, return to a familiar keepsake, or choose to rest. The same world offers possibilities; each individual arrives at them with different needs and experiences.
+
+Over many days, small choices add up. A favorite can become part of a routine. House work takes far longer than one screen or one interaction, and the home can outlast its builder. When a new generation arrives, it inherits a world with history—but it is not a copy of the previous life. What the next Buddy notices and cares about can take the story in a new direction.
 
 ## What he actually does
 
@@ -140,11 +162,11 @@ Cross-platform first-install launchers are included for new boards. Existing own
 
 ## How it works, simply
 
-Buddy maintains a persistent model of a life and a small world. The RTC supplies elapsed time. Hourly simulation steps reconcile needs, behavior, development and world changes. A separate visible-moment scheduler chooses an expressive scene appropriate to the current state; display changes do not themselves advance his age.
+Buddy keeps a persistent model of one life and the small world around it. The RTC provides elapsed time. Roughly hourly simulation steps reconcile needs, behavior, development and changes to that world. Separately, a visible-moment scheduler chooses a scene that expresses something about the current state. A screen refresh is presentation, not a life event: drawing a new picture does not age Buddy or make an activity advance by itself.
 
-Recent climate readings describe the present, not imaginary weather during a long absence. When the device restarts, valid elapsed time can be reconciled; an untrusted clock pauses age advancement rather than inventing time. Sleeping is not a way to keep a life permanently young.
+Temperature readings describe the environment now; the firmware does not invent a detailed weather history for time when the board was off. On restart, Buddy reconciles elapsed time only when the clock is trustworthy. If time cannot be trusted, aging pauses instead of guessing. Manual sleep is a safe, explicit pause in operation—not a way to keep a life permanently young.
 
-The active life is stored internally, not only on the card. Checksummed alternating records and a whole-hour write-ahead journal protect matching life/world changes across interrupted writes. Recovery avoids rerolling an established identity. The optional card holds exports and update packages. These protections reduce risk; they are not a promise that broken hardware, power loss or unsafe card removal can never cause damage.
+The active life is saved inside the board, not only on the microSD card. Checksummed alternating records and a whole-hour journal are used to keep related life and world changes together through interrupted writes. The card is optional for ordinary living, but useful for exporting life archives and installing updates. These safeguards reduce risk; they cannot guarantee recovery from damaged hardware, power loss at the wrong moment or unsafe card removal.
 
 For implementation and testing details, see the private development tree; application source and deterministic simulation tests are not included in this freeware package.
 
