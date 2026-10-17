@@ -45,7 +45,7 @@ This is a designed, rule-based artificial-life simulation with persistent state.
 
 ![Six seed-derived adult Buddy appearances, drawn with the firmware's pixel-art renderer.](docs/assets/seed-appearances.png)
 
-*Each portrait uses a different fixed seed at the same adult stage. These examples show possible appearance variation, not selectable presets or photographs of running devices.*
+*These six portraits are a small sample, each drawn from a different fixed seed at the same adult stage. Buddy uses a 32-bit starting seed, giving roughly 4.3 billion possible seed values. That is the size of the seed space, not a promise of 4.3 billion visibly unique portraits: different seeds can share features, and a Buddy's appearance also changes as he grows.*
 
 ### How an individual life takes shape
 
