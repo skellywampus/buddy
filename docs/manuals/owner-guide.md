@@ -176,5 +176,5 @@ E-paper means the screen holds an image without continuous display power and may
 - The microphone provides local command recognition only; Buddy is not a general speech assistant.
 - Bluetooth and Wi-Fi are not used by the production firmware.
 
-This guide describes production release 2026101701. The project README explains the supported hardware, firmware behavior, release files, and third-party licensing. Buddy application source is not included in the freeware package.
+This guide describes production release 2026101701. The project README explains the supported hardware, firmware behavior, release files, and third-party licensing. Buddy's source is available under the MIT License, while third-party components retain their own terms.
 

@@ -20,11 +20,12 @@ Keep it with all firmware downloads and any distribution of a Buddy device.
   copyright notices. Some notices cover a broader upstream source distribution
   than the features present in this firmware.
 
-Buddy firmware is proprietary freeware under the root LICENSE, not MIT. The
-Arduino library retains LGPL-2.1-or-later and its per-file exceptions; speech,
-model and other components retain their own terms. The Espressif speech grant
-is limited to Espressif hardware. The combined firmware is not a single-license
-MIT binary.
+Buddy's application source and creator-owned materials are now available under
+the root MIT LICENSE in the repository. The Arduino library retains
+LGPL-2.1-or-later and its per-file exceptions; speech, model, and other
+components retain their own terms. The Espressif speech grant is limited to
+Espressif hardware. A compiled firmware image combines components with
+different licenses and is not a single-license MIT binary.
 
 This release includes the two application object files matching the release
 image, a pinned relinking helper, their hashes, the LGPL library source archive,

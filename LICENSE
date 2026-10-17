@@ -1,47 +1,21 @@
-Buddy Freeware License
+MIT License
+
 Copyright (c) 2026 Buddy contributors
 
-Buddy firmware, Buddy-created artwork, Buddy-created sound content, and manuals are
-copyrighted works. They are provided at no charge under this license; they are
-not open-source software and no source-code license is granted, except for the
-limited rights below and rights that cannot lawfully be restricted.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-1. Use. You may install and run the unmodified Buddy firmware on a compatible
-   Waveshare ESP32-S3-ePaper-1.54 V2 monochrome, non-touch board. You may make
-   one backup copy for personal recovery. You may not sell, sublicense,
-   publish, share, or otherwise redistribute Buddy firmware or Buddy-created
-   assets, standalone or embedded in another product. A separate written
-   license from the copyright holder is required for transfer or commercial
-   distribution of a device containing Buddy.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-2. LGPL relinking exception. To the extent the combined firmware includes
-   LGPL-covered libraries, you may modify the combined work for your own use
-   and reverse engineer it to debug those modifications. These permissions
-   override conflicting restrictions elsewhere in this license, as required
-   by the applicable LGPL. Where supplied, the corresponding
-   application object files may be used to relink a modified LGPL library
-   with the firmware for your own use. You may make the copies of those
-   supplied object files strictly necessary to exercise that relinking right;
-   this does not grant permission to redistribute Buddy firmware, Buddy
-   assets, or relinked firmware. This paragraph does not limit any rights
-   granted directly by a third-party license.
-
-3. No other rights. All rights not expressly granted are reserved. This
-   license does not grant rights to Buddy trademarks or names beyond
-   identifying compatible firmware.
-
-4. Third-party components. This license applies only to Buddy-owned material.
-   Components identified in THIRD_PARTY.md, LICENSES/, and the release
-   compliance materials remain under their own terms. If this license
-   conflicts with a third-party license, the third-party license controls for
-   that component.
-
-5. Disclaimer. THE BUDDY-OWNED MATERIAL IS PROVIDED “AS IS”, WITHOUT WARRANTY
-   OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A
-   PARTICULAR PURPOSE, AND NON-INFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED
-   BY LAW, THE COPYRIGHT HOLDERS ARE NOT LIABLE FOR ANY CLAIM OR DAMAGES
-   ARISING FROM ITS USE.
-
-First-flash, USB updater/restore, installer utilities, and the supplied relink and source-assembly helpers are separately
-licensed under the MIT License in INSTALLER-TOOLS-LICENSE. Their source
-availability does not make the Buddy firmware open source.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

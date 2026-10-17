@@ -2,8 +2,8 @@
 
 This folder contains the two application object files used to build the release.
 `object-manifest.json` identifies the release, board, build timestamp, exact
-object hashes, and matching firmware image. Buddy's application source remains
-private. The accompanying Arduino source and third-party notices are in
+object hashes, and matching firmware image. Buddy's application source is
+included in the repository under the root MIT License. The accompanying Arduino source and third-party notices are in
 the parent compliance folder. In the public download, the exact source archive
 is split into numbered pieces so each file fits GitHub's browser-upload limit;
 no source has been omitted. From the compliance folder, run:
@@ -17,7 +17,7 @@ standard library, requires no network, verifies each piece and the complete
 archive, and creates `arduino-esp32-3.3.12-source.tar.gz`. `source-parts.json`
 records the exact hashes. Open `notices.zip` to read the full original
 third-party notice collection, preserving its directory paths. The private
-development staging tree also retains the unsplit archive and notice directory.
+development tree also retains the unsplit archive and notice directory.
 
 Install Python 3.10 or newer, Arduino CLI, and the pinned board package:
 
@@ -62,6 +62,7 @@ helper script, and dependency inventory; changing those requires new tests.
 Tests run on macOS. Native Windows and Linux relinking have not been exercised
 on their respective operating systems in this release review.
 
-The relink helper is MIT licensed under the root `INSTALLER-TOOLS-LICENSE`.
-The application objects retain the root Buddy Freeware License and its LGPL
-relinking exception. Upstream libraries retain their respective licenses.
+The relink helper and Buddy application objects correspond to project-owned
+code under MIT; linked third-party material remains under its respective
+license. The repository's source tree is also available, and the LGPL source
+archive and notices remain part of this release's accompanying materials.

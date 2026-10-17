@@ -1,17 +1,23 @@
-# Project feedback
+# Contributing
 
-Buddy's firmware and original creative assets are distributed as freeware,
-not open-source software. This repository does not accept source-code
-contributions to the firmware. Please do not submit patches, firmware forks,
-or copied Buddy assets without a separate written agreement from the
-copyright holder.
+Thanks for helping improve Buddy. Bug reports, documentation fixes, test
+cases, firmware patches, and artwork/audio contributions are welcome.
 
-The supplied first-flash, USB updater/restore, and relink utilities are
-separately MIT licensed under [INSTALLER-TOOLS-LICENSE](INSTALLER-TOOLS-LICENSE).
-Utility-only corrections may be proposed while retaining their license and
-all third-party notices. Never include device backups, NVS data, SD archives,
-private logs, personal paths, or audio recordings in an issue.
+Before submitting a change:
 
-This is not a statement that the firmware is free of bugs or that every
-hardware configuration has been certified. Report safety or security concerns
-through the private channel configured for this repository.
+- Read [DEVELOPMENT.md](docs/DEVELOPMENT.md) and preserve the documented save,
+  power, update, and cable-safety invariants.
+- Run the relevant sanitized host tests. Do not flash a real device as part of
+  an automated test.
+- Do not include device backups, NVS data, SD archives, diagnostic logs,
+  personal paths, or private audio recordings in an issue or pull request.
+- Keep third-party code and its license notices clearly identified. Do not
+  apply the repository's MIT license to third-party components.
+- Submit only work you have the right to contribute. By submitting a
+  contribution intended for this repository, you agree that it may be
+  distributed under the repository's MIT license, unless you clearly state
+  otherwise before submission and the maintainers accept that alternative.
+
+The project is community-developed and is not affiliated with Waveshare or
+Espressif. Hardware testing claims should state the exact board revision and
+test conditions.

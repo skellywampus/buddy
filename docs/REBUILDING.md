@@ -1,50 +1,40 @@
-# LGPL library relinking (source-private Buddy firmware)
+# Build and relink Buddy
 
-Buddy application source is proprietary and is not included in this freeware
-distribution. The Arduino-ESP32 core/libraries are LGPL-covered. Recipients
-must retain the rights granted by those library licenses; the Buddy Freeware
-License permits the limited changes/reverse engineering needed to modify an
-LGPL-covered library and relink it with Buddy for the recipient's own use.
+Buddy's application source is included under the repository's MIT license.
+This page covers ordinary builds and the additional steps relevant to
+third-party LGPL libraries in the binary release.
 
-## Required release materials
+## Build from source
 
-For each firmware release, this directory's matching compliance package must
-include:
+Follow [developer setup](DEVELOPMENT.md) to install the pinned Arduino-ESP32
+toolchain and build for the supported Waveshare V2 monochrome non-touch board.
+The build and package tools do not flash hardware. The source archive, build
+configuration, sound assets, and deterministic host tests are part of this
+repository.
 
-- the complete corresponding source archive for the LGPL-covered Arduino
-  library, including the exact version and any modifications;
-- Buddy application object files compiled from the exact source/build used for
-  the distributed image, plus needed application data;
-- the matching toolchain, link configuration and any scripts needed to relink;
-- a documented and tested process that replaces a library with a modified
-  compatible version and produces a usable firmware image; and
-- all applicable LGPL notices and license text.
+For a matching release package, run the documented build and compliance
+commands in [PUBLISHING.md](PUBLISHING.md). Keep the release's exact dependency
+inventory and third-party notices with its firmware binaries.
 
-The source archive by itself is not enough, and the ESP32 `.bin` or `.elf` is
-not a substitute for the application object files. Release 2026101701 supplies
-all items above in its `compliance` directory. Its clean relink reproduced the
-released application payload, and a second test with a modified Arduino-ESP32
-Preferences library relinked successfully and changed the output. No board was
-flashed for these tests.
+## LGPL-covered Arduino libraries
 
-In the public browser-upload package the complete Arduino archive is carried
-as numbered `.partNN` files. Run `python3 assemble_source.py` in the compliance
-folder to reconstruct and verify it without a download. The original notices
-are bundled in `notices.zip`; unzip that file to inspect their directory tree.
-This changes transport packaging only, not any source, notice, application
-object, or firmware byte.
+The firmware links Arduino-ESP32 components under LGPL-2.1-or-later with
+file-specific exceptions. The release package includes the corresponding
+library source, license texts, and notices. You may modify LGPL-covered
+libraries and relink them with Buddy subject to those licenses. Preserve
+upstream notices and provide corresponding source for any modified library
+when distributing the result.
 
-## Relinking procedure
+The release also includes exact application object files and a tested helper
+for relinking a modified library against the matching application. This is an
+additional route, not a restriction on using the public Buddy source to build
+and relink a complete modified firmware. Follow the release-specific
+instructions under `releases/2026101701/compliance/relink/` when using those
+objects; do not mix them with a different release or build.
 
-The release's `compliance/relink/relink.py` accepts the exact application
-objects and a locally modified Arduino library directory, builds a discovery
-sketch with the pinned FQBN, and reuses its generated linker command. It does
-not flash a board. It verifies object hashes and the installed toolchain before
-compiling, and emits a validated `.bin` alongside the `.elf`. See the
-[release-specific instructions](../releases/2026101701/compliance/relink/RELINK.md)
-and its acceptance-test report. The report is bound to the image, object
-manifest, helper script and dependency inventory, so it cannot be reused after
-those artifacts change.
+## Binary components
 
-The release artifacts and test report are version-specific; do not substitute
-objects from another build. See [LICENSE-SCOPE.md](../LICENSE-SCOPE.md).
+Some Espressif speech/runtime components and models are distributed as
+prebuilt binaries under Espressif-specific terms and are not all
+source-available. Their licenses are not replaced by Buddy's MIT license.
+See [THIRD_PARTY.md](../THIRD_PARTY.md).

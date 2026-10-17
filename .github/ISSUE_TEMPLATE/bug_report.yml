@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible Buddy firmware problem
+body:
+  - type: markdown
+    attributes:
+      value: Do not upload live flash backups, NVS dumps, full SD contents, identifying device details or private audio. Use only the supported V2 monochrome non-touch board.
+  - type: input
+    id: release
+    attributes:
+      label: Firmware release and board revision
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected behavior and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: power
+    attributes:
+      label: Power and storage conditions
+      description: Battery or USB, Sound setting, SD present, Cable Friends state, and whether restart or unplug changes the symptom.
+    validations:
+      required: true

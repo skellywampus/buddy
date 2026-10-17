@@ -1,6 +1,11 @@
 # License documents
 
-These are third-party grants retained with Buddy. See [license scope](../LICENSE-SCOPE.md) and [third-party provenance](../THIRD_PARTY.md). The exact SDK notices, linked archive inventory and corresponding Arduino source are also supplied in the release compliance directory.
+The root [MIT License](../LICENSE) applies to Buddy-owned project materials.
+The files in this folder are third-party grants retained with Buddy; they do
+not change the root license. See [license scope](../LICENSE-SCOPE.md) and
+[third-party provenance](../THIRD_PARTY.md). The exact SDK notices, linked
+archive inventory, and corresponding Arduino source are also supplied in the
+release compliance directory.
 
 - [Pocket Scout MIT](Pocket-Scout-MIT.txt): retained attribution for portions of shared helpers now consolidated in `firmware/Buddy`.
 - [Arduino-ESP32 LGPL 2.1](Arduino-ESP32-LGPL-2.1.txt): reference license from the pinned 3.3.12 release; per-file exceptions still apply.

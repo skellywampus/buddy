@@ -18,7 +18,7 @@ Files are under [releases/2026101701/first-install](releases/2026101701/first-in
 | Buddy.ino.bin | 0x10000 |
 | srmodels.bin | 0x4B0000 |
 
-Verify the release using the supplied checksums and follow the platform-specific first-flash instructions in this folder. The development-only verification scripts are not included in the freeware package.
+Verify the release using the supplied checksums and follow the platform-specific first-flash instructions in this folder. The complete source and verification scripts are also available in this repository.
 
 Take and retain a complete 8 MB flash backup before the first write, verify its size and hash, and check whether the board already has a Buddy life. A partial read is not a backup. **Stop if this is an existing Buddy.** Do not erase the chip or write the life-save partition at 0x9000. Keep all five images from the same release.
 
@@ -28,4 +28,4 @@ Verify the written images and a functioning startup after the final restart, not
 
 The launcher retains ROM mode through read-back and then uses `read-mac --after watchdog-reset` to start Buddy. Subsequent diagnostics preserve DTR/RTS and clear POSIX HUPCL. The complete status must show the right release, healthy saves/clock, battery latch, wake configuration, watchdog and WELCOME readiness. First-install OTA metadata is UNDEFINED, so startup does not depend on the existing updater's VALID-only acknowledgement.
 
-Do not copy a first-install OTA selector onto a live Buddy to “fix” an update, restore an older life backup over a healthy current life, or use an accelerated-test image. For an existing life, use the [USB updater](USB-UPDATE.md) or the SD update method. Keep the complete matched release and its accompanying license materials together; redistribution requires the copyright holder's permission under [license scope](LICENSE-SCOPE.md).
+Do not copy a first-install OTA selector onto a live Buddy to “fix” an update, restore an older life backup over a healthy current life, or use an accelerated-test image. For an existing life, use the [USB updater](USB-UPDATE.md) or the SD update method. Keep the complete matched release and its third-party license materials together; the root MIT license covers Buddy-owned work, while dependencies retain their own terms.

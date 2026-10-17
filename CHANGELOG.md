@@ -1,6 +1,16 @@
 # Release notes
 
-## 2026101701 — source-private freeware compliance — October 17, 2026
+## MIT source publication — October 17, 2026
+
+Buddy-owned firmware source, tests, tools, documentation, artwork, and the
+creator-supplied sound clips are now included under the MIT License. Updated
+the export workflow to include the source and test suites, removed obsolete
+freeware/source-private statements, and preserved all third-party licenses,
+notices, and corresponding-source materials. The production firmware image,
+saved-life format, and device behavior are unchanged; this repository update
+was not flashed to hardware.
+
+## 2026101701 — source-private freeware compliance package — October 17, 2026
 
 Publication packaging: made the complete public tree fit one GitHub browser
 upload (under 100 files, each under 25 MiB), without removing corresponding

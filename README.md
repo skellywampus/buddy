@@ -14,7 +14,7 @@ You can spend time with him, but you are not responsible for keeping a chore met
 
 The manuals explain day-to-day use in plain language. This README takes a broader look at what Buddy is, how his simulated life develops, and what the firmware is designed to do.
 
-**Current release: `2026101701`.** Buddy is freeware, not open-source firmware. The firmware, Buddy-created artwork, and sounds remain copyrighted; firmware source and raw creative assets are not part of the public package. Installer utilities are separately MIT licensed. Third-party components retain their own terms. The release includes exact matching application objects and a tested source-private LGPL relinking procedure. See [license scope](LICENSE-SCOPE.md) and [third-party notices](THIRD_PARTY.md).
+**Current release: `2026101701`.** Buddy's original firmware, source, tests, tools, documentation, artwork, and creator-supplied sounds are open source under the MIT License. Third-party dependencies keep their own licenses and notices; the combined firmware is not uniformly MIT-licensed. See [license scope](LICENSE-SCOPE.md) and [third-party notices](THIRD_PARTY.md).
 
 ## What makes Buddy different?
 
@@ -178,16 +178,11 @@ Temperature readings describe the environment now; the firmware does not invent 
 
 The active life is saved inside the board, not only on the microSD card. Checksummed alternating records and a whole-hour journal are used to keep related life and world changes together through interrupted writes. The card is optional for ordinary living, but useful for exporting life archives and installing updates. These safeguards reduce risk; they cannot guarantee recovery from damaged hardware, power loss at the wrong moment, or unsafe card removal.
 
-For implementation and testing details, see the private development tree; application source and deterministic simulation tests are not included in this freeware package.
+The complete Buddy application source, deterministic host tests, build tools, and release utilities are included in this repository. See [developer setup](docs/DEVELOPMENT.md) to build and test the firmware.
 
 ## Developer and license information
 
-The firmware source is not included. Third-party license materials and
-corresponding source required by applicable licenses remain included. The release-specific
-LGPL relinking package and instructions are mandatory; see
-[docs/REBUILDING.md](docs/REBUILDING.md). The first-flash and USB tools have
-their own MIT license, as does the supplied relink helper. Host test results and development notes are not shipped
-as a substitute for those compliance materials.
+The source is available here, alongside the firmware release, third-party notices, and corresponding library source required by applicable licenses. The root MIT license covers Buddy-owned work only. See [docs/REBUILDING.md](docs/REBUILDING.md) for build and dependency guidance.
 
 ## Repository map
 
@@ -208,16 +203,5 @@ Private device backups, live life saves, SD logs, incident transcripts, personal
 
 ## License and contributions
 
-Buddy firmware is freeware under [LICENSE](LICENSE), not open source. The
-license allows free use on the supported board, subject to its stated limits
-and the rights required by third-party licenses. The first-flash, USB, and relink
-utilities are separately MIT licensed under
-[INSTALLER-TOOLS-LICENSE](INSTALLER-TOOLS-LICENSE). See
-[LICENSE-SCOPE.md](LICENSE-SCOPE.md), [NOTICE.md](NOTICE.md), and
-[THIRD_PARTY.md](THIRD_PARTY.md) for exact boundaries. Contributions to
-Buddy-owned firmware are not accepted through this binary distribution;
-contact the owner privately before proposing code or assets.
+Buddy-owned project materials are licensed under the MIT License in [LICENSE](LICENSE). Third-party code, models, and other components retain the licenses and notices identified in [LICENSE-SCOPE.md](LICENSE-SCOPE.md), [NOTICE.md](NOTICE.md), and [THIRD_PARTY.md](THIRD_PARTY.md). Contributions are welcome; please preserve third-party attributions and avoid submitting private device data, SD archives, or recordings.
 
-Official firmware downloads include the complete third-party notices/source
-and LGPL relinking materials. Redistribution of Buddy-owned firmware or assets
-requires permission under the Buddy Freeware License.

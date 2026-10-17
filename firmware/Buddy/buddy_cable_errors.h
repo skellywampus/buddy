@@ -1,0 +1,28 @@
+#pragma once
+#include <stdint.h>
+
+enum BuddyCableError : uint8_t {
+  CABLE_ERROR_NONE, CABLE_ERROR_USB_HOST, CABLE_ERROR_LIFE,
+  CABLE_ERROR_SAVE_LOCK, CABLE_ERROR_CLOCK, CABLE_ERROR_CONTACT_LOCK,
+  CABLE_ERROR_QUEUE, CABLE_ERROR_GPIO, CABLE_ERROR_ISR,
+  CABLE_ERROR_WORKER, CABLE_ERROR_RUNTIME, CABLE_ERROR_WATCHDOG,
+  CABLE_ERROR_UART
+};
+
+inline const char *buddyCableErrorText(BuddyCableError error) {
+  switch (error) {
+    case CABLE_ERROR_USB_HOST: return "UNPLUG USB HOST";
+    case CABLE_ERROR_LIFE: return "BUDDY NOT READY";
+    case CABLE_ERROR_SAVE_LOCK: return "SAVE NEEDS REPAIR";
+    case CABLE_ERROR_CLOCK: return "CLOCK NOT READY";
+    case CABLE_ERROR_CONTACT_LOCK: return "FRIENDS SAVE ERROR";
+    case CABLE_ERROR_QUEUE: return "CABLE MEMORY ERROR";
+    case CABLE_ERROR_GPIO: return "CABLE PIN ERROR";
+    case CABLE_ERROR_ISR: return "CABLE SIGNAL ERROR";
+    case CABLE_ERROR_WORKER: return "CABLE TASK ERROR";
+    case CABLE_ERROR_RUNTIME: return "CABLE STOPPED";
+    case CABLE_ERROR_WATCHDOG: return "CABLE CRASH RECOVERED";
+    case CABLE_ERROR_UART: return "CABLE LINK ERROR";
+    default: return "";
+  }
+}

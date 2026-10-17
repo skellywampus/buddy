@@ -1,0 +1,10 @@
+# 8 MB V2 board. Keep NVS/otadata/app0 offsets unchanged from default_8MB.
+# Two 2.3125 MiB OTA slots retain simple SD firmware updates; the remaining space
+# holds the ESP-SR English command model, flashed only during USB setup.
+# Name,   Type, SubType, Offset,   Size,      Flags
+nvs,      data, nvs,     0x9000,   0x5000,
+otadata,  data, ota,     0xe000,   0x2000,
+app0,     app,  ota_0,   0x10000,  0x250000,
+app1,     app,  ota_1,   0x260000, 0x250000,
+model,    data, spiffs,  0x4B0000, 0x340000,
+coredump, data, coredump,0x7F0000,0x10000,

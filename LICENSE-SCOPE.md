@@ -1,63 +1,40 @@
-# License scope and freeware distribution
+# License scope
 
-Buddy is freeware, not open-source software. The current distribution model is
-free download and use on the supported board, with Buddy firmware source,
-artwork source, and original sound files kept private. The exact user
-permissions and third-party exceptions are in [LICENSE](LICENSE). This file
-describes scope; it does not replace that license or provide legal advice.
+Buddy is open-source under the MIT License for material created for Buddy by
+the project contributors. The root [LICENSE](LICENSE) applies to Buddy-owned
+firmware, tests, build and release tools, installer utilities, documentation,
+artwork, and original sound clips included in this repository.
 
-## Buddy-owned material
+## Third-party material remains under its own terms
 
-- Firmware binaries and Buddy-authored application code: Buddy Freeware License.
-- Original Buddy artwork and sound clips: Buddy Freeware License; raw creative
-  source assets are not included in this distribution.
-- Manuals and user-facing documentation: may be downloaded and read for personal
-  use under the Buddy Freeware License; no resale or redistribution is granted.
-- First-flash, USB update/restore utilities, and the supplied relink and source-assembly helpers:
-  separately MIT licensed in [INSTALLER-TOOLS-LICENSE](INSTALLER-TOOLS-LICENSE).
+The root MIT license does not relicense or override third-party work. Some
+files retain their upstream licenses and notices, including the Waveshare
+display reference and waveform material, Pocket Scout-derived helpers,
+Espressif speech code, Arduino-ESP32/ESP-IDF components, and speech models or
+binary libraries. Their exact provenance and terms are documented in
+[THIRD_PARTY.md](THIRD_PARTY.md), [LICENSES/](LICENSES/), and the release's
+compliance materials. Preserve those notices when copying or redistributing
+the relevant files or firmware.
 
-The MIT license formerly present at the repository root has been removed from
-the freeware package. It must not be copied into new Buddy firmware releases.
+The firmware is built for Espressif hardware. Certain Espressif binary
+components and speech models carry Espressif-specific use terms and may not be
+source-available. The repository does not claim that every dependency or
+binary inside a firmware image is itself MIT-licensed or open source.
 
-## Third-party components
+## Creative assets
 
-Third-party works keep their own licenses and notices. The freeware license
-does not remove those rights or obligations. See [THIRD_PARTY.md](THIRD_PARTY.md),
-the texts in [LICENSES/](LICENSES/), and the version-specific release
-compliance directory. These include, among others, LGPL-covered Arduino-ESP32
-components, Espressif components with hardware-specific terms, Pocket Scout
-MIT-attributed helpers, the Waveshare reference material, and runtime notices.
+The eight WAV clips were supplied by the Buddy creator and are included under
+the project MIT license along with their generated ADPCM representation. The
+pixel-art characters, item/activity artwork, and simulation previews created
+by Buddy's code are likewise covered by the project license. Third-party
+artwork, trademarks, and device branding are not granted by the root license.
 
-## LGPL distribution condition
+## Hardware and names
 
-The firmware statically links Arduino-ESP32 components. A freeware binary may
-be distributed without publishing Buddy's source only if the exact release is
-accompanied by the complete corresponding source for the LGPL-covered library
-and usable materials to modify that library and relink the application. The
-Buddy Freeware License therefore grants the limited modification and
-reverse-engineering permissions required for that purpose.
+The MIT license grants rights to the covered code and materials; it does not
+imply endorsement by Waveshare or Espressif, grant rights to their trademarks,
+or certify a hardware design. See [HARDWARE.md](docs/HARDWARE.md) for the
+supported board and safety notes.
 
-For a source-private release, the compliance package must contain application
-object files produced from the exact release source/build, the needed link
-configuration and data, and tested relinking instructions. **Do not publish a
-binary release while those matching materials are absent or unverified.**
-The Arduino source archive and license text alone are not sufficient. Do not
-replace the object-file route with a claim that the Buddy source is required or
-publicly available.
-
-## Release gate
-
-Before publishing a release, verify that:
-
-1. The public export does not contain Buddy application source, raw sound
-   sources, or private build history.
-2. Its object/relink package matches that release's source identity and
-   configuration and has been tested against a modified LGPL library.
-3. All notices, corresponding source, binaries, and compliance instructions
-   are included with the download and any distribution of assembled devices.
-4. The EULA, user permissions, ownership of contributions, and any sales or
-   transfer policy have been reviewed for the intended distribution.
-
-The current release includes the exact relink objects and the tested helper.
-The exporter binds the test report to the firmware, object manifest, helper,
-and dependency inventory; changing any of those invalidates acceptance.
+This document summarizes scope and is not a substitute for the applicable
+license text or third-party terms.

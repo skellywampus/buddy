@@ -1,0 +1,15 @@
+name: Feature idea
+description: Suggest a focused improvement to Buddy's independent life
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should Buddy be able to do?
+      description: Explain how this adds individuality or meaningful consequences, rather than a new chore or menu.
+    validations:
+      required: true
+  - type: textarea
+    id: emergence
+    attributes:
+      label: How could it arise from his existing life?
+      description: Consider traits, age, needs, environment, memories, possessions and family history.

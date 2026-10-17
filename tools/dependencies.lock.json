@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "sources": [
+    {
+      "name": "arduino-esp32",
+      "repo": "espressif/arduino-esp32",
+      "commit": "94afccf35fb1e401facddbcf9e13bcf7c76a31d8",
+      "version": "3.3.12",
+      "archive_sha256": "e447de8af8255244d1c65a6985255cdcad131f753261b73fe4c25b2ca218ade1"
+    },
+    {
+      "name": "esp-idf",
+      "repo": "espressif/esp-idf",
+      "commit": "b774170ff46c393eeb5e495ea37936038d3f4f4f",
+      "version": "5.5.5",
+      "archive_sha256": "f3cb53a6544d2b32992b2a095b8ef75fac44687d2610b7df58995937de48cf19",
+      "notice_files": [
+        "components/fatfs/src/ff.h",
+        "components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h",
+        "components/xtensa/include/xtensa/hal.h"
+      ]
+    },
+    {
+      "name": "esp-sr",
+      "repo": "espressif/esp-sr",
+      "commit": "efa8d907c6d457cd0f99dae6c6b493412d3078d4",
+      "version": "2.5.3"
+    },
+    {
+      "name": "esp-dl",
+      "repo": "espressif/esp-dl",
+      "commit": "5d9c36063dddbe98b5387828c831d6bbadb1370f",
+      "version": "3.3.11"
+    },
+    {
+      "name": "dl_fft",
+      "repo": "espressif/esp-dl",
+      "commit": "04b6f53cb40d1806d8015534b447803e1af493d6",
+      "version": "0.7.0",
+      "subtree": "tools/dl_fft"
+    },
+    {
+      "name": "esp_diagnostics",
+      "repo": "espressif/esp-insights",
+      "commit": "e27601045e900786333a6c23ebfaf8b18925fa24",
+      "version": "1.3.4",
+      "subtree": "components/esp_diagnostics"
+    },
+    {
+      "name": "esp32-bt-lib",
+      "repo": "espressif/esp32-bt-lib",
+      "commit": "b4b7c54b1eab6a844789b69e56322ef5736eddc8"
+    },
+    {
+      "name": "esp32c3-bt-lib",
+      "repo": "espressif/esp32c3-bt-lib",
+      "commit": "0a08c4b32f3666003080b662a1a61794da24ff0f"
+    },
+    {
+      "name": "esp-phy-lib",
+      "repo": "espressif/esp-phy-lib",
+      "commit": "59c1234e929212aec0fdda75769b759951235536"
+    },
+    {
+      "name": "esp-coex-lib",
+      "repo": "espressif/esp-coex-lib",
+      "commit": "79e618f033e926d134decc6d95bb1b1850bd032c"
+    },
+    {
+      "name": "esp32-wifi-lib",
+      "repo": "espressif/esp32-wifi-lib",
+      "commit": "22bb3517b08760ed43b889013f8a122db0d46da0"
+    },
+    {
+      "name": "mbedtls",
+      "repo": "espressif/mbedtls",
+      "commit": "9d669eadb1955d348986b9280156710aaaadf79f"
+    },
+    {
+      "name": "lwip",
+      "repo": "espressif/esp-lwip",
+      "commit": "fd432e4ee2cfb7f7f1c7eb7227e0173412e7b84e"
+    },
+    {
+      "name": "tlsf",
+      "repo": "espressif/tlsf",
+      "commit": "2867f6883a12920b1969ff9624c0ab0e4185c2ce",
+      "notice_files": ["README.md", "include/tlsf.h"]
+    },
+    {
+      "name": "tlsf-upstream-license",
+      "repo": "mattconte/tlsf",
+      "commit": "deff9ab509341f264addbd3c8ada533678591905",
+      "notice_files": ["tlsf.h"]
+    },
+    {
+      "name": "cJSON",
+      "repo": "DaveGamble/cJSON",
+      "commit": "b2890c8d76bbb64e710585ebc0a917196b9c67e7"
+    },
+    {
+      "name": "spiffs",
+      "repo": "pellepl/spiffs",
+      "commit": "ad902cadceb39d0825a97e25ecb5867641f606ba"
+    },
+    {
+      "name": "micro-ecc",
+      "repo": "kmackay/micro-ecc",
+      "commit": "24c60e243580c7868f4334a1ba3123481fe1aa48"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+name: Host verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  host-tests:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install host tools
+        run: sudo apt-get update && sudo apt-get install -y clang ffmpeg
+      - name: Install transport test dependency
+        run: python -m pip install pyserial==3.5
+      - name: Sanitized simulations and release checks
+        run: bash firmware/Buddy/tests/run_host_tests.sh
+  first-flash-tests:
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned flashing tools
+        run: python -m pip install -r installer/requirements.txt
+      - name: Installer safety tests (no hardware)
+        run: python -m unittest discover -s installer/tests -p "test_*.py"
+      - name: Validate release offline
+        run: python installer/launch_first_flash.py --verify-files
