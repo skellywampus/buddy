@@ -1,0 +1,38 @@
+{
+  "release": 2026101701,
+  "target": "Waveshare ESP32-S3-ePaper-1.54 V2 monochrome (non-touch)",
+  "flash_size": 8388608,
+  "channel": "stable",
+  "images": [
+    {
+      "address": "0x0",
+      "file": "bootloader.bin",
+      "sha256": "2697c6dc96cfce919f79e081972b37501ef8ce11c21e82ffa989df7b566b0374",
+      "max_size": 32768
+    },
+    {
+      "address": "0x8000",
+      "file": "partitions.bin",
+      "sha256": "8f506497abc06510dc06fec64db03be038cf632eed09ded137197e8b0000a6fd",
+      "max_size": 4096
+    },
+    {
+      "address": "0xe000",
+      "file": "boot_app0.bin",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "max_size": 8192
+    },
+    {
+      "address": "0x10000",
+      "file": "Buddy.ino.bin",
+      "sha256": "f0fe9c91be2de8c75ec11503e64ac615fc51ef2d490206e9226884e343a93102",
+      "max_size": 2424832
+    },
+    {
+      "address": "0x4b0000",
+      "file": "srmodels.bin",
+      "sha256": "c7ea01954baaa1fa89ef6b88ba8819edcbf419b7aba1e093950f8badf1a6c328",
+      "max_size": 3407872
+    }
+  ]
+}

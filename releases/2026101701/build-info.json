@@ -1,0 +1,10 @@
+{
+  "release": 2026101701,
+  "channel": "stable",
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc,PartitionScheme=custom,PSRAM=opi,FlashMode=qio,FlashSize=8M,USBMode=hwcdc,UploadMode=default,UploadSpeed=921600,CPUFreq=240,DebugLevel=none,EraseFlash=none",
+  "arduino_core": "3.3.12",
+  "sdk_versions": "lib-builder: master 6671d0b\nesp-idf: v5.5.5 b774170ff46\narduino: master e7c1e8cd4\ntinyusb: master 88c7f0b81\nchmorgan__esp-libhelix-mp3: 1.0.3\nespressif__cbor: 0.6.1~4\nespressif__cjson: 1.7.19~2\nespressif__cmake_utilities: 0.5.3\nespressif__dl_fft: 0.7.0\nespressif__esp-dl: 3.3.11\nespressif__esp-dsp: 1.8.0\nespressif__esp-modbus: 2.1.3\nespressif__esp-nn: 1.3.2\nespressif__esp-serial-flasher: 0.0.11\nespressif__esp-sr: 2.5.3\nespressif__esp-tflite-micro: 1.4.0\nespressif__esp-zboss-lib: 1.6.4\nespressif__esp-zigbee-lib: 1.6.8\nespressif__esp32-camera:\nespressif__esp_cam_sensor: 2.4.0\nespressif__esp_daylight: 1.0.1\nespressif__esp_delta_ota: 1.1.4\nespressif__esp_diag_data_store: 1.1.1\nespressif__esp_diagnostics: 1.3.4\nespressif__esp_encrypted_img: 2.3.0\nespressif__esp_insights: 1.3.4\nespressif__esp_jpeg: 1.3.1\nespressif__esp_matter: 1.5.1\nespressif__esp_modem: 2.1.0\nespressif__esp_new_jpeg: 1.0.2\nespressif__esp_rainmaker: 1.16.0\nespressif__esp_rcp_update: 1.3.1\nespressif__esp_sccb_intf: 0.0.9\nespressif__esp_schedule: 1.3.3\nespressif__esp_secure_cert_mgr: 2.9.3\nespressif__esp_video: 2.4.1\nespressif__jsmn: 1.1.0\nespressif__json_generator: 1.1.2\nespressif__json_parser: 1.0.3\nespressif__libsodium: 1.0.22~1\nespressif__mdns: 1.13.1\nespressif__network_provisioning: 1.0.2\nespressif__qrcode: 0.1.0~2\nespressif__rmaker_cmd_resp: 1.0.0\nespressif__rmaker_common: 1.8.6\nespressif__rmaker_common_events: 1.0.0\nespressif__rmaker_console: 1.0.1\nespressif__rmaker_system_ctrl: 1.0.0\nespressif__rmaker_time_sync: 1.0.2\nespressif__rmaker_work_queue: 1.0.0\nespressif__usb_host_uvc: 2.5.2\njoltwallet__littlefs: 1.22.3\n",
+  "app_bytes": 2180128,
+  "hardware_tested": false,
+  "build_command": "python3 tools/build_release.py --build-path build/esp32s3"
+}

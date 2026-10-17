@@ -1,0 +1,576 @@
+{
+  "release": 2026101701,
+  "application_sha256": "f0fe9c91be2de8c75ec11503e64ac615fc51ef2d490206e9226884e343a93102",
+  "archives": [
+    {
+      "file": "libc.a",
+      "sha256": "f597e99102903b97c022bb04b717370e0bfadf4333bbf97ecca8a50dc627d438"
+    },
+    {
+      "file": "libm.a",
+      "sha256": "408d3c09e57cfa909fc80ceee9c31a7295a42da8d6704bc24265a940b9fa97ed"
+    },
+    {
+      "file": "libstdc++.a",
+      "sha256": "038159699a27599d22c62c1f5fe0266ff43bb3d8a9478c5bd067cbebf42d6726"
+    },
+    {
+      "file": "libgcc.a",
+      "sha256": "3afe9e11212826779e94da47f6b1a3507ce922ca3f3836d4d8c18547156c4c0f"
+    },
+    {
+      "file": "libbtbb.a",
+      "sha256": "4d60de87cad0fa9519d68e0e40778a68dc61af040853fd0b5c45efa2a010ee94"
+    },
+    {
+      "file": "libphy.a",
+      "sha256": "038ac2bc37dc297e295811bc095d2b360a49aa0dddaa51ccb4b60ce2d1b2b73f"
+    },
+    {
+      "file": "libapp_update.a",
+      "sha256": "03c06e44e96aebc3adedf1d3f0acb817b79a2ce16528c9947a7c5b0f43d9ddc9"
+    },
+    {
+      "file": "libbt.a",
+      "sha256": "ea1169a7357639aab5810fb6a86451d898624b59274abd8166ddf3c0ad6cff0f"
+    },
+    {
+      "file": "libbtdm_app.a",
+      "sha256": "513488f088f7806c5a815580fd00e189265962a8824091b1e60618b7f345d0c1"
+    },
+    {
+      "file": "libc_speech_features.a",
+      "sha256": "72e3411a09005a63c9c363269836f17e3c3747a6c4bc7d9752434f9f31bbfd34"
+    },
+    {
+      "file": "libcoexist.a",
+      "sha256": "4be00662f372895453e71a159d6c18135281ef1a340755b136ce17fa36dc5d53"
+    },
+    {
+      "file": "libcxx.a",
+      "sha256": "0140025618097971f12f0203ae99063a2b92396e0f0b2ff88fa2adc384c7fcf1"
+    },
+    {
+      "file": "libdl_lib.a",
+      "sha256": "2acee444ec84efd9700ae9314461d1802988871afb878dec76d95bbb5d5f4b4f"
+    },
+    {
+      "file": "libefuse.a",
+      "sha256": "3e66d6f372c80d88534dcca26dd6a03c89f1334560499e520a1d31c5f1d4b4f7"
+    },
+    {
+      "file": "libesp-tls.a",
+      "sha256": "b4ed872005c5c901ba87cc3da1ef3a58924652359c48f6c9833d5517ce4ee2a7"
+    },
+    {
+      "file": "libesp_adc.a",
+      "sha256": "73b8ba9bf6095c9611beb5698480cdfd4053fec01ed369cb5bb76e539d057fbc"
+    },
+    {
+      "file": "libesp_app_format.a",
+      "sha256": "bbfe100c4296abf24e42fd969adfb01c9c1dbbe8d6c98afc7c476f065112f4b7"
+    },
+    {
+      "file": "libesp_audio_front_end.a",
+      "sha256": "614f0aa97e9fe3d888dbf7893d2bcc313ca66c0fefd2f666ade493ffd1320fe4"
+    },
+    {
+      "file": "libesp_audio_processor.a",
+      "sha256": "b56b3096b31bdffb7ad6ac6aa2eb44f6e42d8fb3c460f5735cca997f54fb8826"
+    },
+    {
+      "file": "libesp_coex.a",
+      "sha256": "8836615dc82b3c026dba77b3cea89e0fc16433da6591f7d06b9c5bd52b101bbf"
+    },
+    {
+      "file": "libesp_common.a",
+      "sha256": "f12bcf6ad1aeb3759f370a53aede492b0588a94c8bf1528914f35f0113a69962"
+    },
+    {
+      "file": "libesp_driver_gpio.a",
+      "sha256": "1fd2907fca4d0f7a0a744ac94b4574a5138b68de3a761feda746e7b017c3e4e2"
+    },
+    {
+      "file": "libesp_driver_i2c.a",
+      "sha256": "04673af7dd49783e66b46c6d4d383a6ca2e9b57616274217348dab23da217c16"
+    },
+    {
+      "file": "libesp_driver_i2s.a",
+      "sha256": "75ccb9d9c50f43c1e5ad3436e1066d75571cbaff7645b1674fe026a1970fa0e5"
+    },
+    {
+      "file": "libesp_driver_rmt.a",
+      "sha256": "b3e590cbd9cb7dc80bb248dc53717e1cf1aeec6f2c9de429de92ae8a1bd0c9fc"
+    },
+    {
+      "file": "libesp_driver_sdmmc.a",
+      "sha256": "3fe1c83c8f0ede25ffa17543523a6f81b38565f5283267b74deec62ba27dfe68"
+    },
+    {
+      "file": "libesp_driver_sdspi.a",
+      "sha256": "a06eeae1611b429cee99f403f25e96ae010ca7b8e875365780cab4f48360071d"
+    },
+    {
+      "file": "libesp_driver_spi.a",
+      "sha256": "3374ae6147b18af34616385e4ca186579b7e02e53fafe1fd50b25e3b1379c92c"
+    },
+    {
+      "file": "libesp_driver_tsens.a",
+      "sha256": "7696d3662c2bc7d7717e1f132c289b805c31c3de052ce9b69018edc5003e39c4"
+    },
+    {
+      "file": "libesp_driver_uart.a",
+      "sha256": "2a468a27d3d6cb69ddf5db8833946a702ebaf37d27db3fc100b65be5d0037921"
+    },
+    {
+      "file": "libesp_driver_usb_serial_jtag.a",
+      "sha256": "da16d48a7ac2fb3f59d2a0f3fce015a84465e3fca3f304b11d3103b5d923f807"
+    },
+    {
+      "file": "libesp_event.a",
+      "sha256": "34fcbfcc120758410cf7936d1e39dd876ba104ed3533a41641afda1dee2c633c"
+    },
+    {
+      "file": "libesp_http_client.a",
+      "sha256": "d93ceb98705aa52a95e85895e9a9cf4ee9c1e0f3aa17af48e130a1a393dd7f24"
+    },
+    {
+      "file": "libesp_https_ota.a",
+      "sha256": "d0e9cbb25f49963e0b8f61741cdd0da6cd2743a5250be1d2e255b86c3a27a62c"
+    },
+    {
+      "file": "libesp_mm.a",
+      "sha256": "9a11d5c67b436a79c22c91bc6252ad7a842e52f0804f02f8574b49724572bce6"
+    },
+    {
+      "file": "libesp_partition.a",
+      "sha256": "a67c92178c30c32e4c1da2b85ea9abf7b00505c9b46005873cf5384e6aea844a"
+    },
+    {
+      "file": "libesp_phy.a",
+      "sha256": "639685582dca99add2ef577586a78999aa164a7212851378516b6838b00e71a0"
+    },
+    {
+      "file": "libesp_pm.a",
+      "sha256": "e63ade156937d7b4e0ad398894c4f83d30ea8972ddd767ce53608e19f5f9dc97"
+    },
+    {
+      "file": "libesp_ringbuf.a",
+      "sha256": "16b591f168c1f496e29eadf437442cc3b286ed5dedecf3c0cfa316979e23563a"
+    },
+    {
+      "file": "libesp_rom.a",
+      "sha256": "d68774d8d9ce3240d6ef0684517b6fead14132665e34472fe18bf77c4c49e452"
+    },
+    {
+      "file": "libesp_security.a",
+      "sha256": "58225a2d5108c45cf92ecc4ccb95a2d944a03922373f2a9c16cc73640842e8f2"
+    },
+    {
+      "file": "libesp_timer.a",
+      "sha256": "0b94c8f6a058a0bbc97a7057a8b97c055404a5466b61eeba71eeb581faa39ca3"
+    },
+    {
+      "file": "libesp_vfs_console.a",
+      "sha256": "6f6808dae82e1248eb809a28fe257696d1ff676a94ae7d4ff5f67e17092fc3eb"
+    },
+    {
+      "file": "libespcoredump.a",
+      "sha256": "a3d0a1aa6b29f192e555a9e3348ac48ba2f94704bdea7fd5f1c8ed1545f14db4"
+    },
+    {
+      "file": "libespressif__cjson.a",
+      "sha256": "25cbedd32446cbc0c7e00cb665ba1797e1bb61d0bb5e9b8f95cf5c427faa16e0"
+    },
+    {
+      "file": "libespressif__dl_fft.a",
+      "sha256": "6eb291d780f022fd2f99657220a8054315f76714374e626cca67142a25a5f5d8"
+    },
+    {
+      "file": "libespressif__esp-dl.a",
+      "sha256": "2cf4248efe95b786039d432b6a29042172f45abc12b6c52bc543f63a3c22e07c"
+    },
+    {
+      "file": "libespressif__esp-sr.a",
+      "sha256": "b3ece7b3adb1ee41f942051446d758f46e8931c5c04978152cad4f76089a9e6d"
+    },
+    {
+      "file": "libespressif__esp_diagnostics.a",
+      "sha256": "244bc2cfa31147128cbda15a3230443539d71adac2ddd45a69a9e41b1b3b475d"
+    },
+    {
+      "file": "libfatfs.a",
+      "sha256": "b59342a9639d1c6ebb214cb34aba50005507c7d910cb878f73c6c46dfc61cc3c"
+    },
+    {
+      "file": "libfbs_model.a",
+      "sha256": "bb5b6ead89ce711cea218eca71070d2a5c70e35416c07109bdb467e35cec8234"
+    },
+    {
+      "file": "libfst.a",
+      "sha256": "775ea29a30a3f92a3992fdbf7037f218abe244dd01d624c92e1ac1527c625471"
+    },
+    {
+      "file": "libhal.a",
+      "sha256": "7f8ea46e7b60528b52259ebaf5d0e0b02d780cb538039102755bfcae3c6db9f0"
+    },
+    {
+      "file": "libheap.a",
+      "sha256": "6235cf71a51806d65713dce561ea165064862a7ada7ade28a5c95e86612d4ef1"
+    },
+    {
+      "file": "libhttp_parser.a",
+      "sha256": "5fd677702915bbcd99383e3024cf5a3327ee996f99ca4a7cbd1e5cca00885b42"
+    },
+    {
+      "file": "libhufzip.a",
+      "sha256": "ca435f564dfd0c83993bf0e12399935d5ba25a5b1f951792297f086eee69376d"
+    },
+    {
+      "file": "liblog.a",
+      "sha256": "f55708c74a27f7409c98fd0ebc0f4a42534964b0285d05c301f58f25d7277eb9"
+    },
+    {
+      "file": "liblwip.a",
+      "sha256": "db52e09918bc5fc3269e625b87bff77f56ca0042e38aa34abcc9efa168b2953c"
+    },
+    {
+      "file": "libmbedcrypto.a",
+      "sha256": "97b57e133e2d5a0759d5bc3c4b7ec193abf04e43c6464e4b674897fad2541f24"
+    },
+    {
+      "file": "libmbedtls_2.a",
+      "sha256": "28ab43137697df904dd20789b2ebbd8033d7bb5c359c2ea4ac4391a64a8bdd84"
+    },
+    {
+      "file": "libmbedx509.a",
+      "sha256": "571b9da50879f8699aeabf55bf35e8de0d1a83af06539bb66a7d5815005b4eb2"
+    },
+    {
+      "file": "libmultinet.a",
+      "sha256": "7b8bb0f34bd4e809fc450f608dfd76327a5107432f07c711e559de75036a9d6f"
+    },
+    {
+      "file": "libnewlib.a",
+      "sha256": "2c700e5e79c3d8b7d8b6ea6175c3530953410c2f23f290c670f938b1eab9732b"
+    },
+    {
+      "file": "libnsnet.a",
+      "sha256": "92bf26b051e02f9fed9ea9d7d99c9ba10da9e8e2fda75aaa228338d39ab95936"
+    },
+    {
+      "file": "libnvs_flash.a",
+      "sha256": "67143321c9076015bdab84c5a9d5f5730bc5219bc6783034caf67a99f3da7a80"
+    },
+    {
+      "file": "libnvs_sec_provider.a",
+      "sha256": "51738115d324b6145a2eed3edfd849f99e7f52e93b1add777e85e211e331b604"
+    },
+    {
+      "file": "libpthread.a",
+      "sha256": "3733969c62deba684e237f4895bb29df584d47d144286b5e1097922c4c99d5f7"
+    },
+    {
+      "file": "libsdmmc.a",
+      "sha256": "8881ee861a2f3931227faf6fa822e5f8818784255dc25cd56e16748acbbeb341"
+    },
+    {
+      "file": "libsoc.a",
+      "sha256": "99c1a5e156adfdcf290194213453067ae99979b4bd3f6618ea5b31cdfb9f1c12"
+    },
+    {
+      "file": "libspiffs.a",
+      "sha256": "06905ce2d899725dc09464475df32668c2fee09f5548275edc5016fe21ca55f0"
+    },
+    {
+      "file": "libtcp_transport.a",
+      "sha256": "838488e671d854da86f0610a28bf396e915f37583df511e01839af8e195701aa"
+    },
+    {
+      "file": "libvadnet.a",
+      "sha256": "66b15ca54a0a25ab6dcaff301a94b64664c6d8772561f0772a4b884b854fb55f"
+    },
+    {
+      "file": "libvfs.a",
+      "sha256": "b126e5c97ba209b6ca3b34ec2372e4c9de725ced6d33ddab9807fc81fd5bd3a9"
+    },
+    {
+      "file": "libwakenet.a",
+      "sha256": "b902214a08392bb64a4ad0b3bb02326e220e1b9c00928e4d7f41b39dcaafc9b2"
+    },
+    {
+      "file": "libxt_hal.a",
+      "sha256": "4823e6c657199a6726f3163f15e1222edb85a8a33eeaafd2aad0cc06150cc4ec"
+    },
+    {
+      "file": "libxtensa.a",
+      "sha256": "e6664c4836c4d76d46fe6fcf9ed6ec4eb8fe0a8054a27f651dfe352b6937e994"
+    },
+    {
+      "file": "libbootloader_support.a",
+      "sha256": "0350f6039479e20acbe1ef159edaac3a01cea6eb07d13b14f3bc476bbf70a08e"
+    },
+    {
+      "file": "libesp_hw_support.a",
+      "sha256": "6adf0cdd9c14357ced91a7768fb3eb2f58bee93bf2f004610bebf0a4b96efe7e"
+    },
+    {
+      "file": "libesp_psram.a",
+      "sha256": "3904a2491fa9993911218cbca30b8fc5ff0954c7698849fd1a4adf32a4e29f76"
+    },
+    {
+      "file": "libesp_system.a",
+      "sha256": "3fa34619defd0e4718dac29a93673652a3ad495b2d5551f381d1c78af92c9d38"
+    },
+    {
+      "file": "libfreertos.a",
+      "sha256": "676526d42808947c19e1551ae30e2ad09406b824ce96ad4a118e4435cac78dd2"
+    },
+    {
+      "file": "libspi_flash.a",
+      "sha256": "556e5bb1be877b8c7a4e09e9df976dea236ab3f64d9702e67870bd61a8922b8c"
+    },
+    {
+      "file": "core.a",
+      "sha256": "4d6f0892fe2efa43527cf9b8b2b571466211ecba74ee86471d3b2b8f667d8605"
+    }
+  ],
+  "arduino_libraries": [
+    "FS",
+    "Preferences",
+    "SD_MMC",
+    "Update",
+    "Wire"
+  ],
+  "sources": [
+    {
+      "name": "arduino-esp32",
+      "repo": "espressif/arduino-esp32",
+      "commit": "94afccf35fb1e401facddbcf9e13bcf7c76a31d8",
+      "version": "3.3.12",
+      "archive_sha256": "e447de8af8255244d1c65a6985255cdcad131f753261b73fe4c25b2ca218ade1",
+      "url": "https://github.com/espressif/arduino-esp32/tree/94afccf35fb1e401facddbcf9e13bcf7c76a31d8",
+      "notices": [
+        "LICENSE.md",
+        "cores/esp32/libb64/LICENSE",
+        "libraries/BLE/LICENSE",
+        "libraries/BLE/NOTICE"
+      ]
+    },
+    {
+      "name": "esp-idf",
+      "repo": "espressif/esp-idf",
+      "commit": "b774170ff46c393eeb5e495ea37936038d3f4f4f",
+      "version": "5.5.5",
+      "archive_sha256": "f3cb53a6544d2b32992b2a095b8ef75fac44687d2610b7df58995937de48cf19",
+      "notice_files": [
+        "components/fatfs/src/ff.h",
+        "components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h",
+        "components/xtensa/include/xtensa/hal.h"
+      ],
+      "url": "https://github.com/espressif/esp-idf/tree/b774170ff46c393eeb5e495ea37936038d3f4f4f",
+      "notices": [
+        "LICENSE",
+        "components/bt/common/tinycrypt/LICENSE",
+        "components/console/argtable3/LICENSE",
+        "components/console/linenoise/LICENSE",
+        "components/driver/test_apps/components/esp_serial_slave_link/LICENSE",
+        "components/esptool_py/LICENSE",
+        "components/fatfs/src/ff.h",
+        "components/freertos/FreeRTOS-Kernel/LICENSE.md",
+        "components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h",
+        "components/http_parser/LICENSE.txt",
+        "components/newlib/COPYING.NEWLIB",
+        "components/newlib/COPYING.picolibc",
+        "components/wpa_supplicant/COPYING",
+        "components/xtensa/include/xtensa/hal.h",
+        "docs/en/COPYRIGHT.rst",
+        "docs/en/contribute/copyright-guide.rst",
+        "docs/zh_CN/COPYRIGHT.rst",
+        "docs/zh_CN/contribute/copyright-guide.rst",
+        "tools/catch/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "esp-sr",
+      "repo": "espressif/esp-sr",
+      "commit": "efa8d907c6d457cd0f99dae6c6b493412d3078d4",
+      "version": "2.5.3",
+      "url": "https://github.com/espressif/esp-sr/tree/efa8d907c6d457cd0f99dae6c6b493412d3078d4",
+      "notices": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "esp-dl",
+      "repo": "espressif/esp-dl",
+      "commit": "5d9c36063dddbe98b5387828c831d6bbadb1370f",
+      "version": "3.3.11",
+      "url": "https://github.com/espressif/esp-dl/tree/5d9c36063dddbe98b5387828c831d6bbadb1370f",
+      "notices": [
+        "LICENSE",
+        "esp-dl/LICENSE",
+        "examples/speaker_verification/LICENSE",
+        "models/cat_detect/LICENSE",
+        "models/coco_detect/LICENSE",
+        "models/coco_pose/LICENSE",
+        "models/coco_seg/LICENSE",
+        "models/color_detect/LICENSE",
+        "models/dog_detect/LICENSE",
+        "models/hand_detect/LICENSE",
+        "models/hand_gesture_recognition/LICENSE",
+        "models/human_face_detect/LICENSE",
+        "models/human_face_recognition/LICENSE",
+        "models/imagenet_cls/LICENSE",
+        "models/motion_detect/LICENSE",
+        "models/pedestrian_detect/LICENSE",
+        "models/person_reid/LICENSE",
+        "models/speaker_verification/LICENSE"
+      ]
+    },
+    {
+      "name": "dl_fft",
+      "repo": "espressif/esp-dl",
+      "commit": "04b6f53cb40d1806d8015534b447803e1af493d6",
+      "version": "0.7.0",
+      "subtree": "tools/dl_fft",
+      "url": "https://github.com/espressif/esp-dl/tree/04b6f53cb40d1806d8015534b447803e1af493d6",
+      "notices": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "esp_diagnostics",
+      "repo": "espressif/esp-insights",
+      "commit": "e27601045e900786333a6c23ebfaf8b18925fa24",
+      "version": "1.3.4",
+      "subtree": "components/esp_diagnostics",
+      "url": "https://github.com/espressif/esp-insights/tree/e27601045e900786333a6c23ebfaf8b18925fa24",
+      "notices": [
+        "LICENSE",
+        "components/esp_diagnostics/LICENSE"
+      ]
+    },
+    {
+      "name": "esp32-bt-lib",
+      "repo": "espressif/esp32-bt-lib",
+      "commit": "b4b7c54b1eab6a844789b69e56322ef5736eddc8",
+      "url": "https://github.com/espressif/esp32-bt-lib/tree/b4b7c54b1eab6a844789b69e56322ef5736eddc8",
+      "notices": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "esp32c3-bt-lib",
+      "repo": "espressif/esp32c3-bt-lib",
+      "commit": "0a08c4b32f3666003080b662a1a61794da24ff0f",
+      "url": "https://github.com/espressif/esp32c3-bt-lib/tree/0a08c4b32f3666003080b662a1a61794da24ff0f",
+      "notices": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "esp-phy-lib",
+      "repo": "espressif/esp-phy-lib",
+      "commit": "59c1234e929212aec0fdda75769b759951235536",
+      "url": "https://github.com/espressif/esp-phy-lib/tree/59c1234e929212aec0fdda75769b759951235536",
+      "notices": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "esp-coex-lib",
+      "repo": "espressif/esp-coex-lib",
+      "commit": "79e618f033e926d134decc6d95bb1b1850bd032c",
+      "url": "https://github.com/espressif/esp-coex-lib/tree/79e618f033e926d134decc6d95bb1b1850bd032c",
+      "notices": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "esp32-wifi-lib",
+      "repo": "espressif/esp32-wifi-lib",
+      "commit": "22bb3517b08760ed43b889013f8a122db0d46da0",
+      "url": "https://github.com/espressif/esp32-wifi-lib/tree/22bb3517b08760ed43b889013f8a122db0d46da0",
+      "notices": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "mbedtls",
+      "repo": "espressif/mbedtls",
+      "commit": "9d669eadb1955d348986b9280156710aaaadf79f",
+      "url": "https://github.com/espressif/mbedtls/tree/9d669eadb1955d348986b9280156710aaaadf79f",
+      "notices": [
+        "LICENSE",
+        "framework/LICENSE"
+      ]
+    },
+    {
+      "name": "lwip",
+      "repo": "espressif/esp-lwip",
+      "commit": "fd432e4ee2cfb7f7f1c7eb7227e0173412e7b84e",
+      "url": "https://github.com/espressif/esp-lwip/tree/fd432e4ee2cfb7f7f1c7eb7227e0173412e7b84e",
+      "notices": [
+        "COPYING",
+        "contrib/apps/LwipMibCompiler/SharpSnmpLib/license.txt"
+      ]
+    },
+    {
+      "name": "tlsf",
+      "repo": "espressif/tlsf",
+      "commit": "2867f6883a12920b1969ff9624c0ab0e4185c2ce",
+      "notice_files": [
+        "README.md",
+        "include/tlsf.h"
+      ],
+      "url": "https://github.com/espressif/tlsf/tree/2867f6883a12920b1969ff9624c0ab0e4185c2ce",
+      "notices": [
+        "README.md",
+        "include/tlsf.h"
+      ]
+    },
+    {
+      "name": "tlsf-upstream-license",
+      "repo": "mattconte/tlsf",
+      "commit": "deff9ab509341f264addbd3c8ada533678591905",
+      "notice_files": [
+        "tlsf.h"
+      ],
+      "url": "https://github.com/mattconte/tlsf/tree/deff9ab509341f264addbd3c8ada533678591905",
+      "notices": [
+        "tlsf.h"
+      ]
+    },
+    {
+      "name": "cJSON",
+      "repo": "DaveGamble/cJSON",
+      "commit": "b2890c8d76bbb64e710585ebc0a917196b9c67e7",
+      "url": "https://github.com/DaveGamble/cJSON/tree/b2890c8d76bbb64e710585ebc0a917196b9c67e7",
+      "notices": [
+        "LICENSE",
+        "tests/unity/docs/license.txt"
+      ]
+    },
+    {
+      "name": "spiffs",
+      "repo": "pellepl/spiffs",
+      "commit": "ad902cadceb39d0825a97e25ecb5867641f606ba",
+      "url": "https://github.com/pellepl/spiffs/tree/ad902cadceb39d0825a97e25ecb5867641f606ba",
+      "notices": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "micro-ecc",
+      "repo": "kmackay/micro-ecc",
+      "commit": "24c60e243580c7868f4334a1ba3123481fe1aa48",
+      "url": "https://github.com/kmackay/micro-ecc/tree/24c60e243580c7868f4334a1ba3123481fe1aa48",
+      "notices": [
+        "LICENSE.txt"
+      ]
+    }
+  ],
+  "runtime_toolchain": "esp-x32 2601; GCC runtime exception and Newlib notices",
+  "speech_model_sha256": "c7ea01954baaa1fa89ef6b88ba8819edcbf419b7aba1e093950f8badf1a6c328"
+}

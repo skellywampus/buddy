@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "release": 2026101701,
+  "status": "PASS",
+  "application_sha256": "f0fe9c91be2de8c75ec11503e64ac615fc51ef2d490206e9226884e343a93102",
+  "object_manifest_sha256": "3228008d6bbbe5587e2e148a892bf09f3f2b2947b033d5e4a875cc573a2372db",
+  "relink_helper_sha256": "3c65d8bdd744fc172e3d7037baa09a8cc794b8cf288ae7b62d838621b17ae71f",
+  "dependency_inventory_sha256": "442a0876ae24819e84af67de372c04d0e18cb3a912b80756f3e7f63ba9052cb4",
+  "tested_at": "2026-10-17T09:14:08.006848+00:00",
+  "tests": {
+    "clean_payload_matches": true,
+    "modified_library_relinks": true,
+    "modified_library_changes_payload": true
+  },
+  "clean_image_sha256": "f0fe9c91be2de8c75ec11503e64ac615fc51ef2d490206e9226884e343a93102",
+  "modified_image_sha256": "91e68f488e97af393ffc991cc9bf77285de8c7ee911e19b0a01d1b222262b197",
+  "modified_library_source": {
+    "file": "Preferences/src/Preferences.cpp",
+    "original_sha256": "346fa41649decf26c62660b671891e9815eeab2d4539543cd36b6a0d54bf9dab",
+    "modified_sha256": "11e153996c7d51d419cc72cbd1141917ca38efc493ef9cf3cbef1f54a15f5991"
+  },
+  "hardware_touched": false
+}

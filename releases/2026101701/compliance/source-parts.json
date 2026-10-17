@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "file": "arduino-esp32-3.3.12-source.tar.gz",
+  "bytes": 73034084,
+  "sha256": "e447de8af8255244d1c65a6985255cdcad131f753261b73fe4c25b2ca218ade1",
+  "parts": [
+    {
+      "file": "arduino-esp32-3.3.12-source.tar.gz.part01",
+      "bytes": 20971520,
+      "sha256": "1a3b703c85963a33cfb5561b113237c20f33a8a8e39700bbb2317031c8fe5631"
+    },
+    {
+      "file": "arduino-esp32-3.3.12-source.tar.gz.part02",
+      "bytes": 20971520,
+      "sha256": "f3d770b4f0c576f3f4f058e31546545ab240866ee6337d4f47a984f74fca6be5"
+    },
+    {
+      "file": "arduino-esp32-3.3.12-source.tar.gz.part03",
+      "bytes": 20971520,
+      "sha256": "38cc485c57071d2e1418259a2cc568421caacdd892ecbbfc05f9f9d435c85cea"
+    },
+    {
+      "file": "arduino-esp32-3.3.12-source.tar.gz.part04",
+      "bytes": 10119524,
+      "sha256": "fcfbcb1603c344094c079159a65f162c411a3a9412f7a24773b248b49289c766"
+    }
+  ]
+}

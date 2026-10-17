@@ -1,0 +1,21 @@
+{
+  "release": 2026101701,
+  "application_sha256": "f0fe9c91be2de8c75ec11503e64ac615fc51ef2d490206e9226884e343a93102",
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc,PartitionScheme=custom,PSRAM=opi,FlashMode=qio,FlashSize=8M,USBMode=hwcdc,UploadMode=default,UploadSpeed=921600,CPUFreq=240,DebugLevel=none,EraseFlash=none",
+  "arduino_core": "3.3.12",
+  "toolchain": "esp-x32 2601",
+  "build_date": "Oct 17 2026",
+  "build_time": "03:49:02",
+  "objects": [
+    {
+      "file": "Buddy.ino.cpp.o",
+      "sha256": "743224d6887f9a6a92c0f3c31b96263bea35520e820dd6d69c242d5cde8468ce",
+      "bytes": 1992896
+    },
+    {
+      "file": "buddy_esp32_sr.c.o",
+      "sha256": "2a362660ca1b4e1c27dcf4d7c16953dc51374974539d69332e84d184375147f9",
+      "bytes": 61360
+    }
+  ]
+}

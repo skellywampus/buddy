@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+build/
+*.elf
+*.map
+*.o
+*.a
+*.su
+backups/
+*.partial
+*.csv
+!firmware/Buddy/partitions.csv
+*.log
+*.pbm
+# Approved release bins and UPD files are intentionally included.
+!/BUDDY.UPD
+!/releases/**/*.bin
+!/releases/**/*.UPD
+!/releases/**/compliance/relink/*.o
+# Never add full-flash backups, live NVS exports or SD-card contents.
