@@ -106,7 +106,7 @@ The interface has three screens: **Buddy**, **About**, and **Settings**. About p
 
 Hold actions start when recognized, before release. Menus return home after about 45 seconds without interaction. Five quick BOOT clicks request a non-destructive recovery restart. RESET/PWR is the separate hardware power/wake control; a brief press can start Buddy after manual sleep. You should not have to keep it held to maintain operation.
 
-Normal idle operation uses deadline-driven light sleep: the processor rests between scheduled work and button events. The old hourly auto-doze feature is retired. Manual sleep saves state, closes and unmounts the card, stops audio and microphone processing, and leaves a sleeping face visible. **An e-paper image remaining visible does not prove the electronics are running.**
+During ordinary idle periods, the processor uses deadline-driven light sleep between scheduled work and button events. This is separate from Buddy's visible manual-sleep mode: when you deliberately put him to sleep, he saves state, closes and unmounts the card, stops audio and microphone processing, and leaves a sleeping face visible. **An e-paper image remaining visible does not prove the electronics are running.**
 
 For everyday instructions, read the illustrated [owner guide](docs/manuals/owner-guide.md) or the simpler [family manual](docs/manuals/family-manual.md) directly on GitHub. Word downloads are also available: [owner guide](docs/manuals/Buddy%20Owner%20Guide.docx) and [family manual](docs/manuals/Buddy%20Family%20Owner%20Manual.docx). Their illustrations are embedded, not linked to a particular computer. [Troubleshooting](docs/TROUBLESHOOTING.md) explains common symptoms and safe recovery.
 
@@ -142,6 +142,8 @@ One activation gives one opportunity to meet one Buddy. Waiting without a valid 
 - A suitable battery for portable operation and a data-capable USB-C cable for first installation.
 - Optional microSD storage for archives and later updates.
 - For Cable Friends: a second compatible Buddy and a suitable ordinary USB-C cable.
+
+The board I purchased for Buddy is the [Waveshare ESP32-S3-ePaper-1.54-EN development board on Amazon](https://www.amazon.com/dp/B0FS1LKNZT). This link is for hardware identification; I am not affiliated with the manufacturer or seller and receive no monetary compensation from purchases made through it.
 
 V1, touchscreen and four-color `1.54G` boards are **not supported by this firmware build**. A similar product name is not enough to establish compatibility. The display is 200 × 200 pixels; the board includes an RTC, temperature/humidity sensor, microphone, audio codec and speaker. [Hardware details and pin assignments](docs/HARDWARE.md).
 
